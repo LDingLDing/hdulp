@@ -1,0 +1,54 @@
+{
+  "name": "hdulp",
+  "version": "1.0.0",
+  "description": "杭电良品",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node server",
+    "clean": "rimraf dist",
+    "deploy": "npm run clean && NODE_ENV=production webpack -p --progress --config webpack.production.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hdulp/hdulp.git"
+  },
+  "author": "ahbing",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hdulp/hdulp/issues"
+  },
+  "homepage": "https://github.com/hdulp/hdulp#readme",
+  "devDependencies": {
+    "babel-core": "^6.2.1",
+    "babel-loader": "^6.2.0",
+    "babel-preset-es2015": "^6.1.18",
+    "babel-preset-react": "^6.1.18",
+    "css-loader": "^0.23.0",
+    "express": "^4.13.3",
+    "extract-text-webpack-plugin": "^0.9.1",
+    "file-loader": "^0.8.4",
+    "html-webpack-plugin": "^1.6.2",
+    "http-proxy": "^1.12.0",
+    "node-libs-browser": "^0.5.3",
+    "node-sass": "^3.4.2",
+    "opn": "^3.0.3",
+    "rimraf": "^2.4.4",
+    "sass-loader": "^3.1.2",
+    "style-loader": "^0.13.0",
+    "url-loader": "^0.5.6",
+    "webpack": "^1.12.8",
+    "webpack-dev-server": "^1.12.1"
+  },
+  "dependencies": {
+    "react": "^0.14.3",
+    "react-dom": "^0.14.3",
+    "jquery": "^2.1.4",
+    "bootstrap": "^3.3.4"
+  },
+  "vendors": [
+    "react",
+    "react-dom",
+    "bootstrap",
+    "jquery"
+  ]
+}
